@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Header({ Component, pageProps }) {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<nav className="navbar navbar-expand-lg navbar-light fixed-top">
 			<div className="container">
 				<Link href="/">
 					<a className="navbar-brand js-scroll-trigger">SaganSat</a>
@@ -19,7 +19,7 @@ function Header({ Component, pageProps }) {
 					Menu
           <i className="fas fa-bars"></i>
 				</button>
-				<div className="collapse navbar-collapse" id="navbarResponsive">
+				<div className="collapse navbar-collapse">
 					<ul className="navbar-nav ml-auto">
 						<li className="nav-item">
 							<Link href="/">

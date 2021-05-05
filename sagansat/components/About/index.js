@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div class="about-section text-center" id="about">
+    <section class="about-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -14,7 +14,7 @@ function About() {
         </div>
         <img class="img-fluid" src="assets/img/nanosat.png" alt="" />
       </div>
-    </div>
+    </section>
   )
 }
 
