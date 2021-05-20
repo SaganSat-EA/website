@@ -1,7 +1,7 @@
-import { Title }  from '../styles/home'
+import { Header }  from '../components/Header'
 
 export default function Home() {
   return (
-    <Title>Hello World</Title>
+    <Header />
   )
 }

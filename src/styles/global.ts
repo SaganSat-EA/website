@@ -26,15 +26,18 @@ export const GlobalStyle = createGlobalStyle`
   body, input, textarea, button {
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.0625em;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 600;
+    font-weight: 750;
   }
 
   a {
     color: inherit;
     text-decoration: none;
+    font-weight: 650;
   }
 
   button {
