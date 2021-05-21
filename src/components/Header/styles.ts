@@ -1,47 +1,95 @@
 import styled from 'styled-components'
-
 import { lighten } from 'polished'
 
-export const Container = styled.header`
-  background: var(--black);
+interface ContainerProps {
+  headerBackground: string
+}
+
+export const Container = styled.header<ContainerProps>`
+  background: ${({headerBackground}) => 
+    headerBackground == 'backgroundTransparent' 
+      ? 'rgba(0, 0, 0, 0)' 
+      : 'var(--light)'
+  };
+
+  color: ${({headerBackground}) => 
+    headerBackground == 'backgroundTransparent' 
+      ? 'var(--secondary);' 
+      : 'var(--black)'
+  };
 
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
+
+  transition: all 0.7s ease;
+
+  @media (max-width: 860px) {
+    background: var(--light);
+    color: var(--black);
+  }
 `
 
 export const Content = styled.div`
-  height: 4.8rem;
+  max-width: 1120px;
   margin: 0 auto;
-
-  color: var(--secondary);
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
-
-  ul {
-    display: flex;
-    list-style-type: none;
-
-    li {
-      padding: 0 2rem;
-
-      &:hover {
-        color: ${lighten(0.3, '#6c757d')};
-      }
-
-      &:last-child {
-        margin-right: 5rem;
-      }
-    }
-  }
+  padding: 1.7rem 1rem;
 `
+
 export const Logo = styled.a`
   font-size: 0.65rem;
-  padding-left: 17px;
+  padding-left: 2rem;
+`
+
+export const Hamburguer = styled.div`
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 860px) {
+    padding-right: 2rem;
+    display: flex;
+  }
+
+  &:hover {
+    color: ${lighten(0.1, '#6c757d')};
+  }
+`
+
+interface MenuProps {
+  isOpen: boolean
+}
+
+export const Menu = styled.div<MenuProps>`
+  display: flex;
+  list-style-type: none;
+
+  @media (max-width: 860px) {
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    max-height: ${({isOpen}) => (isOpen ? '300px' : '0')};
+    margin-top: ${({isOpen}) => (isOpen ? '1.5rem' : '0')};
+
+    transition: all 0.4s ease;
+  }
+`
+
+export const MenuLink = styled.a`
+  padding: 0 2rem;
+  font-weight: 500;
+
+  @media (max-width: 860px) {
+    padding: 0.5rem 2rem;
+  }
+
+  &:hover {
+    color: ${lighten(0.2, '#6c757d')};
+  }
 `

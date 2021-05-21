@@ -1,7 +1,11 @@
-import { Header }  from '../components/Header'
+import { Container, Content } from '../styles/home'
 
 export default function Home() {
   return (
-    <Header />
+    <Container>
+      <Content>
+        
+      </Content>
+    </Container>
   )
 }
