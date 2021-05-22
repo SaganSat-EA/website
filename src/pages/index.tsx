@@ -1,11 +1,11 @@
-import { Container, Content } from '../styles/home'
+import { Awards } from '../components/Awards'
+
+import { Container } from '../styles/home'
 
 export default function Home() {
   return (
     <Container>
-      <Content>
-        
-      </Content>
+      <Awards />
     </Container>
   )
 }

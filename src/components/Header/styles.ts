@@ -4,7 +4,7 @@ import { transparentize } from 'polished'
 export const Container = styled.header`
   display: inline-block;
 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url('https://i.imgur.com/ahYRGLZ.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url('/bg-home.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -22,6 +22,7 @@ export const HeaderContainer = styled.div`
 `
 
 export const HeaderContent = styled.div`
+  margin-top: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +44,7 @@ export const HeaderContent = styled.div`
     transition: all 0.4s ease;
 
     @media (max-width: 860px) {
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
   }
 

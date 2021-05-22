@@ -19,11 +19,11 @@ export const Nav = styled.nav<NavProps>`
       : 'var(--black)'
   };
 
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1;
 
   transition: all 0.5s ease;
 
