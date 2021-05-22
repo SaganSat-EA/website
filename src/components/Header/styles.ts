@@ -46,6 +46,11 @@ export const HeaderContent = styled.div`
     @media (max-width: 860px) {
       font-size: 2.7rem;
     }
+
+    @media (max-width: 450px) {
+      font-weight: 650;
+      font-size: 1.2rem;
+    }
   }
 
   h3 {
@@ -60,12 +65,20 @@ export const HeaderContent = styled.div`
     @media (max-width: 860px) {
       font-size: 0.8rem;
     }
+
+    @media (max-width: 450px) {
+      font-size: 0.5rem;
+    }
   }
 `
 
 export const Button = styled.button`
-  width: 200px;
-  padding: 1.3rem;
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: ${transparentize(0.2, '#64a19d')};
 
   border: 0;
@@ -85,5 +98,17 @@ export const Button = styled.button`
     letter-spacing: 0.15rem;
 
     color: var(--light);
+  }
+
+  @media (max-width: 450px) {
+    padding: 1rem 2rem;
+
+      span {
+      font-size: 0.5rem;
+      font-weight: 500;
+      letter-spacing: 0.15rem;
+
+      color: var(--light);
+    }
   }
 `
