@@ -5,7 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>SaganSat</title>
           <link rel="shortcut icon" href="/favicon.ico" />
           {/* Google fonts */}
           <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />

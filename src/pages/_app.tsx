@@ -1,15 +1,21 @@
-import { Header }  from '../components/Header'
+import Head from 'next/head'
+
+import { Layout } from '../components/Layout'
 
 import { GlobalStyle }  from '../styles/global'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main>
-      <GlobalStyle/>
+    <>
+      <Head>
+        <title>SaganSat</title>
+      </Head>
 
-      <Header />
-      <Component {...pageProps} />
-    </main>
+      <GlobalStyle/>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   )
 }
 

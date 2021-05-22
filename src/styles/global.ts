@@ -18,8 +18,17 @@ export const GlobalStyle = createGlobalStyle`
     --info: #17a2b8;
   }
 
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%;
+    }
+
+    @media (max-width: 720px) {
+      font-size: 87.5%; 
+    }
+  }
+
   body {
-    background: var(--gray-dark);
     -webkit-font-smoothing: antialiased;
   }
 

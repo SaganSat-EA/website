@@ -1,25 +1,29 @@
 import { useEffect, useState } from 'react'
 import { FiMenu } from 'react-icons/fi'
 
-import { 
-  Container, 
-  Content, 
+import {
+  Container,
+  Nav, 
+  NavContent, 
   Logo, 
   Hamburguer, 
   Menu, 
-  MenuLink 
+  MenuLink,
+  HeaderContainer,
+  HeaderContent,
+  Button
 } from './styles'
 
 export function Header() {
   const [hamburguerIsOpen, setHamburguerIsOpen] = useState(false)
-  const [headerBackground, setHeaderBackground] = useState('backgroundTransparent')
+  const [navBackground, setnavBackground] = useState('backgroundTransparent')
 
   useEffect(function mount() {
     function handleScroll() {
-      if(window.scrollY >= 150) {
-        setHeaderBackground('backgroundSolid')
+      if(window.scrollY >= 90) {
+        setnavBackground('backgroundSolid')
       } else {
-        setHeaderBackground('backgroundTransparent')
+        setnavBackground('backgroundTransparent')
       }
     }
     window.addEventListener('scroll', handleScroll)
@@ -30,22 +34,34 @@ export function Header() {
   })
 
   return (
-    <Container headerBackground={headerBackground}>
-      <Content>
-        <Logo href="/">
-          <h1>
-            SaganSat
-          </h1>
-        </Logo>
-        <Hamburguer onClick={() => setHamburguerIsOpen(!hamburguerIsOpen)}>
-          <FiMenu size={30} />
-        </Hamburguer>
-        <Menu isOpen={hamburguerIsOpen}>
-          <MenuLink href="/">Sobre a equipe</MenuLink>
-          <MenuLink href="/">Sobre a pesquisa</MenuLink>
-          <MenuLink href="/">Como você pode ajudar?</MenuLink>
-        </Menu>
-      </Content>
+    <Container>
+      <Nav navBackground={navBackground}>
+        <NavContent>
+          <Logo href="/">
+            <h1>
+              SaganSat
+            </h1>
+          </Logo>
+          <Hamburguer onClick={() => setHamburguerIsOpen(!hamburguerIsOpen)}>
+            <FiMenu size={30} />
+          </Hamburguer>
+          <Menu isOpen={hamburguerIsOpen}>
+            <MenuLink href="/">Sobre a equipe</MenuLink>
+            <MenuLink href="/">Sobre a pesquisa</MenuLink>
+            <MenuLink href="/">Como você pode ajudar?</MenuLink>
+          </Menu>
+        </NavContent>
+      </Nav>
+      <HeaderContainer>
+        <HeaderContent>
+          <h1>SAGANSAT-EA</h1>
+          <h3>Um nano satélite brasileiro com uma missão em todo o mundo.</h3>
+
+          <Button>
+            <span>SAIBA MAIS</span>
+          </Button>
+        </HeaderContent>
+      </HeaderContainer>
     </Container>
   )
 }
