@@ -9,7 +9,7 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   max-width: 720px;
-  margin: 0 auto;
+  margin: 3rem auto;
 
   display: flex;
   flex-direction: column;
