@@ -6,6 +6,7 @@ export function Layout({children}) {
   return (
     <Container>
       <Header />
+      
       <Content>
         {children}
       </Content>
