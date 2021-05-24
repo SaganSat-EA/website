@@ -9,8 +9,8 @@ export function Nets() {
     <Container>
       <Card>
         <MdEmail
+          className='icon'
           size={30}
-          color='#64a19d'
         />
 
         <h4>E-MAIL</h4>

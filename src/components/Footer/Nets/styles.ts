@@ -19,12 +19,22 @@ export const Card = styled.div`
   justify-content: center;
   align-items: center;
 
-  background: var(--light);
-
   border-bottom: 5px solid var(--primary);
   border-radius: 5px;
 
-  transition: all 0.8s ease;
+  background: var(--light);
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, var(--primary) 50%, transparent 50%);
+  -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  
+  transition: all 300ms, color 300ms ease, border-color 300ms ease;
+
+  .icon {
+    color: var(--primary);
+  }
 
   h4 {
     padding-top: 1rem;
@@ -47,12 +57,31 @@ export const Card = styled.div`
 
     font-size: 0.8rem;
     font-weight: 500;
-    
-    transition: all 0.4s ease;
+  }
 
-    &:hover {
-      text-decoration: underline;
-      color: var(--primary);
+  &:hover {
+    color: var(--black);
+    border-color: var(--primary);
+    background-image: linear-gradient(to top, var(--primary) 51%, transparent 50%);
+    background-position: 0 100%;
+    -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+
+    .icon {
+      color: var(--light);
+    }
+
+    hr {
+      background: var(--light);
+    }
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
