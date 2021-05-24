@@ -6,11 +6,14 @@ export function AlternativeRoutesCard() {
   return (
     <Container>
       <Image 
-        width={820}
+        width={1200}
         height={700}
         src='/routes.jpg'
-        objectFit='cover'
+        objectFit='fill'
       />
+
+      <hr />
+
       <Description>
         <h2>Rotas Alternativas</h2>
 

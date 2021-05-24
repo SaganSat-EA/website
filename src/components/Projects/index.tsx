@@ -1,4 +1,5 @@
 import { AlternativeRoutesCard } from './AlternativeRoutesCard'
+import { ProjectTypesCard } from './ProjectTypesCard'
 
 import { 
   Container, 
@@ -10,6 +11,8 @@ export function Projects() {
     <Container>
       <Content>
         <AlternativeRoutesCard />
+
+        <ProjectTypesCard />
       </Content>
     </Container>
   )
