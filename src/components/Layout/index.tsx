@@ -1,3 +1,4 @@
+import { Footer } from '../Footer'
 import { Header } from '../Header'
 
 import { Container, Content } from './styles'
@@ -10,6 +11,8 @@ export function Layout({children}) {
       <Content>
         {children}
       </Content>
+
+      <Footer />
     </Container>
   )
 }
