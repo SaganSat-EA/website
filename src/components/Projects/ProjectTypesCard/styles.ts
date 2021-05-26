@@ -19,16 +19,33 @@ export const Card = styled.div`
   justify-content: center;
   padding: 6rem;
   z-index: 1;
-  
-  background: var(--black);
 
-  transition: all 0.4s ease;
+  background: var(--black);
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, var(--light) 50%, transparent 50%);
+  -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+  
+  transition: all 300ms, color 300ms ease, border-color 300ms ease;
 
   &:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    color: var(--light);
+    border-color: var(--light);
+    background-image: linear-gradient(to top, var(--light) 51%, transparent 50%);
+    background-position: 0 100%;
+    -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
 
-    border-radius: 15px;
+    div {
+      h2 {
+        color: var(--black);
+      }
+    }
   }
 
   @media (max-width: 860px) {
