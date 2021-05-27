@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { Link as Scroll } from 'react-scroll'
 import { lighten } from 'polished'
 
 interface NavProps {
@@ -10,7 +10,7 @@ interface MenuProps {
   isOpen: boolean
 }
 
-export const Nav = styled.nav<NavProps>`
+export const NavContainer = styled.nav<NavProps>`
   background: ${({navBackground}) => 
     navBackground == 'backgroundTransparent' 
       ? 'rgba(0, 0, 0, 0)' 
@@ -45,12 +45,12 @@ export const NavContent = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 1.7rem 1rem;
+  padding: 0 1rem;
 `
 
 export const Logo = styled.a`
   font-size: 0.8rem;
-  padding-left: 2rem;
+  padding: 1.7rem 2rem;
 `
 
 export const Hamburguer = styled.div`
@@ -71,6 +71,13 @@ export const Menu = styled.div<MenuProps>`
   display: flex;
   list-style-type: none;
 
+  a.active {
+    color: var(--primary);
+    border-bottom: 5px solid var(--primary);
+
+    cursor: default;
+  }
+
   @media (max-width: 860px) {
     width: 100%;
     overflow: hidden;
@@ -80,23 +87,35 @@ export const Menu = styled.div<MenuProps>`
     margin-top: ${({isOpen}) => (isOpen ? '1.5rem' : '0')};
 
     transition: all 0.4s ease;
+
+    a.active {
+      border: 0;
+    }
   }
 `
 
-export const MenuLink = styled.a`
-  padding: 0 2rem;
+export const MenuLink = styled(Scroll)`
+  height: 100%;
+  padding: 1.7rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: 500;
   cursor: pointer;
 
   &:hover {
-    color: ${lighten(0.6, '#6c757d')};
+    color: ${lighten(0.1, '#64a19d')};
   }
 
   @media (max-width: 860px) {
-    padding: 0.5rem 2rem;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    width: 40%;
 
     &:hover {
-      color: ${lighten(0.6, '#000')};
+      color: var(--primary);
     }
   }
 `

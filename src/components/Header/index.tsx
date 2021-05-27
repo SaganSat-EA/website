@@ -16,7 +16,7 @@ export function Header() {
           <h3>Um nano satélite brasileiro com uma missão em todo o mundo.</h3>
 
           <Scroll
-            to='awards' 
+            to='home' 
             smooth={true}
             duration={1000}
             spy={true}

@@ -1,8 +1,8 @@
 import { Container, Content, Description } from './styles'
 
-export function Awards({ id }) {
+export function Awards() {
   return (
-    <Container id={id}>
+    <Container>
       <Content>
         <h2>
           2º lugar na Olimpíada Brasileira De Satélites

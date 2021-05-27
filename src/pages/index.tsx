@@ -9,9 +9,11 @@ export default function Home() {
     <Container>
       <Header />
 
-      <Awards id='awards'/>
+      <main id='home'>
+        <Awards/>
 
-      <Projects />
+        <Projects />
+      </main>
     </Container>
   )
 }
