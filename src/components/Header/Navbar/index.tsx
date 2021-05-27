@@ -10,9 +10,11 @@ import {
   MenuLink
 } from './styles'
 
+type NavBackground = 'backgroundTransparent' | 'backgroundSolid'
+
 export function Navbar() {
   const [hamburguerIsOpen, setHamburguerIsOpen] = useState(false)
-  const [navBackground, setnavBackground] = useState('backgroundTransparent')
+  const [navBackground, setnavBackground] = useState<NavBackground>('backgroundTransparent')
 
   useEffect(function mount() {
     function handleScroll() {

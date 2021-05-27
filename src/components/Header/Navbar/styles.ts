@@ -6,6 +6,10 @@ interface NavProps {
   navBackground: 'backgroundTransparent' | 'backgroundSolid'
 }
 
+interface MenuProps {
+  isOpen: boolean
+}
+
 export const Nav = styled.nav<NavProps>`
   background: ${({navBackground}) => 
     navBackground == 'backgroundTransparent' 
@@ -15,7 +19,7 @@ export const Nav = styled.nav<NavProps>`
 
   color: ${({navBackground}) => 
     navBackground == 'backgroundTransparent' 
-      ? `${lighten(0.3, '#6c757d')}`
+      ? `${lighten(0.4, '#6c757d')}`
       : 'var(--black)'
   };
 
@@ -63,10 +67,6 @@ export const Hamburguer = styled.div`
   }
 `
 
-interface MenuProps {
-  isOpen: boolean
-}
-
 export const Menu = styled.div<MenuProps>`
   display: flex;
   list-style-type: none;
@@ -87,11 +87,15 @@ export const MenuLink = styled.a`
   padding: 0 2rem;
   font-weight: 500;
 
-  @media (max-width: 860px) {
-    padding: 0.5rem 2rem;
+  &:hover {
+    color: ${lighten(0.6, '#6c757d')};
   }
 
-  &:hover {
-    color: ${lighten(0.1, '#6c757d')};
+  @media (max-width: 860px) {
+    padding: 0.5rem 2rem;
+
+    &:hover {
+      color: ${lighten(0.6, '#000')};
+    }
   }
 `
