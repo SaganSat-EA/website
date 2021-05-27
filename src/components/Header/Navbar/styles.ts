@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { lighten } from 'polished'
 
 interface NavProps {
-  navBackground: string
+  navBackground: 'backgroundTransparent' | 'backgroundSolid'
 }
 
 export const Nav = styled.nav<NavProps>`

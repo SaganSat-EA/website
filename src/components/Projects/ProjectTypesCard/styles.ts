@@ -54,7 +54,7 @@ export const Card = styled.div`
 `
 
 interface CardContentProps {
-  alignItems: string
+  alignItems: 'left' | 'center' | 'right'
 }
 
 export const CardContent = styled.div<CardContentProps>`
