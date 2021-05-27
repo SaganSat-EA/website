@@ -1,5 +1,3 @@
-import { Navbar } from './Navbar'
-
 import {
   Container,
   HeaderContainer,
@@ -10,8 +8,6 @@ import {
 export function Header() {
   return (
     <Container>
-      <Navbar />
-      
       <HeaderContainer>
         <HeaderContent>
           <h1>SAGANSAT-EA</h1>
