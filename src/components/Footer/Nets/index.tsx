@@ -1,6 +1,7 @@
 import { MdEmail } from 'react-icons/md'
 import { AiOutlineInstagram, AiFillGithub, AiFillHeart, AiFillLinkedin } from 'react-icons/ai'
 import { IoLogoTwitter } from 'react-icons/io'
+import { CgMail } from 'react-icons/cg'
 
 import { Card, Container, SocialContainer, DeveloperContainer, IconLink } from './styles'
 
@@ -17,12 +18,20 @@ export function Nets() {
 
         <hr />
 
-        <a href=''>
+        <a href='mailto:felipe.juliano@sagansat.com'>
           felipe.juliano@sagansat.com
         </a>
 
-        <a href=''>
+        <a href='mailto:jonathan.ferro@sagansat.com'>
           jonathan.ferro@sagansat.com
+        </a>
+
+        <a href='mailto:matheus.nobre@sagansat.com'>
+          matheus.nobre@sagansat.com
+        </a>
+
+        <a href='mailto:joão.victor@sagansat.com'>
+          joão.victor@sagansat.com
         </a>
       </Card>
 
@@ -61,13 +70,23 @@ export function Nets() {
         </div>
 
         <div className='card-back'>
-          <h4>Redes para contato</h4>
+          <h4>Mais informações</h4>
           <div className='row'>
             <IconLink
               target='_blank'
               href='https://www.linkedin.com/in/lissone/'
             >
               <AiFillLinkedin
+                className='icon'
+                size={20}
+              />
+            </IconLink>
+
+            <IconLink
+              target='_blank'
+              href='mailto:leonardo.lissonez@gmail.com'
+            >
+              <CgMail
                 className='icon'
                 size={20}
               />
