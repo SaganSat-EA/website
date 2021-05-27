@@ -1,8 +1,8 @@
 import { MdEmail } from 'react-icons/md'
-import { AiOutlineInstagram, AiFillGithub } from 'react-icons/ai'
+import { AiOutlineInstagram, AiFillGithub, AiFillHeart, AiFillLinkedin } from 'react-icons/ai'
 import { IoLogoTwitter } from 'react-icons/io'
 
-import { Card, Container, Social, Icon } from './styles'
+import { Card, Container, SocialContainer, DeveloperContainer, IconLink } from './styles'
 
 export function Nets() {
   return (
@@ -26,28 +26,65 @@ export function Nets() {
         </a>
       </Card>
 
-      <Social>
-        <Icon href=''>
+      <SocialContainer>
+        <IconLink href=''>
           <IoLogoTwitter 
             className='icon'
             size={20}
           />
-        </Icon>
+        </IconLink>
           
-        <Icon href=''>
+        <IconLink href=''>
           <AiOutlineInstagram
             className='icon'
             size={20}
           />
-        </Icon>
+        </IconLink>
 
-        <Icon href=''>
+        <IconLink href=''>
           <AiFillGithub
             className='icon'
             size={20}
           />
-        </Icon>
-      </Social>
+        </IconLink>
+      </SocialContainer>
+
+      <DeveloperContainer>
+        <div className='card-front'>
+          <h4>Desenvolvido com</h4>
+          <AiFillHeart 
+            className='icon'
+            size={15}
+            color='red'
+          />
+          <h4>por Lissone</h4>
+        </div>
+
+        <div className='card-back'>
+          <h4>Redes para contato</h4>
+          <div className='row'>
+            <IconLink
+              target='_blank'
+              href='https://www.linkedin.com/in/lissone/'
+            >
+              <AiFillLinkedin
+                className='icon'
+                size={20}
+              />
+            </IconLink>
+
+            <IconLink
+              target='_blank' 
+              href='https://github.com/Lissone'
+            >
+              <AiFillGithub
+                className='icon'
+                size={20}
+              />
+            </IconLink>
+          </div>
+        </div>
+      </DeveloperContainer>
     </Container>
   )
 }
