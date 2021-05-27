@@ -1,14 +1,14 @@
 import { ToastContainer, Slide } from 'react-toastify'
 
 import { Footer } from '../Footer'
-import { Header } from '../Header'
+import { Navbar } from '../Navbar'
 
 import { Container, Content } from './styles'
 
 export function Layout({children}) {
   return (
     <Container>
-      <Header />
+      <Navbar />
       
       <Content>
         <ToastContainer 

@@ -1,4 +1,4 @@
-import { Navbar } from './Navbar'
+import { Link as Scroll } from 'react-scroll'
 
 import {
   Container,
@@ -10,16 +10,23 @@ import {
 export function Header() {
   return (
     <Container>
-      <Navbar />
-      
       <HeaderContainer>
         <HeaderContent>
           <h1>SAGANSAT-EA</h1>
           <h3>Um nano satélite brasileiro com uma missão em todo o mundo.</h3>
 
-          <Button>
-            <span>SAIBA MAIS</span>
-          </Button>
+          <Scroll
+            to='home' 
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact='true'
+            offset={-80}
+          >
+            <Button>
+              <span>SAIBA MAIS</span>
+            </Button>
+          </Scroll>
         </HeaderContent>
       </HeaderContainer>
     </Container>
