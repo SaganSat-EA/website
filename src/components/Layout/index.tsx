@@ -1,3 +1,5 @@
+import { ToastContainer, Slide } from 'react-toastify'
+
 import { Footer } from '../Footer'
 import { Header } from '../Header'
 
@@ -9,6 +11,13 @@ export function Layout({children}) {
       <Header />
       
       <Content>
+        <ToastContainer 
+          position='bottom-center'
+          autoClose={3000}
+          hideProgressBar={false}
+          transition={Slide}
+          pauseOnHover={false}
+        />
         {children}
       </Content>
 
