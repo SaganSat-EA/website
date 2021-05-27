@@ -37,7 +37,7 @@ export const Content = styled.div`
   }
 
   form {
-    width: 80%;
+    width: 100%;
     padding: 1.5rem 0;
 
     display: flex;
@@ -45,11 +45,10 @@ export const Content = styled.div`
     justify-content: center;
     align-items: center;
 
-    input {
+    input, textarea {
       width: 100%;
-      padding: 0 1.5rem;
+      padding: 1rem 1.5rem;
       margin-bottom: 1rem;
-      height: 4rem;
       border-radius: 0.25rem;
 
       color: var(--light);
@@ -69,6 +68,11 @@ export const Content = styled.div`
       &::placeholder {
         color: var(--light);
       }
+    }
+
+    textarea {
+      height: 8rem;
+      resize: none;
     }
   }
 `

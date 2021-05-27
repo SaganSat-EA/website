@@ -15,9 +15,9 @@ export function ContactUs() {
         </h1>
         
         <form action="post">
-          <input type="text" placeholder="Digite sua dúvida" name="question" />
           <input type="email" placeholder="Digite seu e-mail" name="email" />
           <input type="text" placeholder="Digite seu nome" name="name" />
+          <textarea placeholder="Digite sua dúvida" name="question" />
 
           <Button type="submit">
             <span>
