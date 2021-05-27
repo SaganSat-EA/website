@@ -5,15 +5,15 @@ import { Container, Copyright } from './styles'
 export function Footer() {
   return (
    <Container>
-     <ContactUs />
+    <ContactUs />
 
-     <Nets />
+    <Nets />
 
-     <Copyright>
-       <h4>
-        Copyright © Sagan 2020
-       </h4>
-     </Copyright>
+    <Copyright>
+      <h4>
+      Copyright © Sagan {new Date().getFullYear()}
+      </h4>
+    </Copyright>
    </Container> 
   )
 }

@@ -90,13 +90,92 @@ export const Card = styled.div`
   }
 `
 
-export const Social = styled.div`
-  padding-top: 4rem;
+export const DeveloperContainer = styled.div`
+  width: 30%;
+  height: 100%;
+  margin-top: 2rem;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+
+  h4 {
+    font-weight: 500;
+    color: var(--light);
+
+    cursor: default;
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+
+    &:before {
+			z-index: 1;
+		}
+		&:after {
+			z-index: 2;
+		}
+  }
+
+  .card-front {
+    display: flex;
+    flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		transition: 1s cubic-bezier(.25,.8,.25,1);
+    backface-visibility: hidden;
+
+    .icon {
+      margin: 4px 8px;
+    }
+
+    &:before,
+		&:after {
+			position: absolute;
+		}
+  }
+
+	.card-back {
+    transform: rotateX(180deg);
+		display: flex;
+    flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: 1s cubic-bezier(.25,.8,.25,1);
+    backface-visibility: hidden;
+
+    .row {
+      margin-top: .8rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+		&:before,
+		&:after {
+			position: absolute;
+		}
+	}
+	
+	&:hover .card-front {
+		transform: rotateX(-180deg);
+	}
+	&:hover .card-back {
+		transform: rotateX(0deg);
+	}
+`
+
+export const SocialContainer = styled.div`
+  padding-top: 2rem;
   display: flex;
   align-items: row;
 `
 
-export const Icon = styled.a`
+export const IconLink = styled.a`
   margin: 0 0.5rem;
   padding: 0.8rem;
 

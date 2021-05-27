@@ -15,7 +15,7 @@ export const Copyright = styled.section`
   background: var(--black);
 
   h4 {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--secondary);
   }
 `

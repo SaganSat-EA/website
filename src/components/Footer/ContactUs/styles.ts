@@ -1,4 +1,5 @@
 import { darken, transparentize } from 'polished'
+import { Form as Unform } from '@unform/web'
 import styled from 'styled-components'
 
 export const Container = styled.section`
@@ -35,21 +36,26 @@ export const Content = styled.div`
       font-size: 1.8rem;
     }
   }
+`
 
-  form {
-    width: 80%;
-    padding: 1.5rem 0;
+export const Form = styled(Unform)`
+  width: 100%;
+  padding: 1.5rem 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    input {
+  transition: all 0.8s ease;
+
+  div {
+    width: 100%;
+
+    input, textarea {
       width: 100%;
-      padding: 0 1.5rem;
-      margin-bottom: 1rem;
-      height: 4rem;
+      padding: 1rem 1.5rem;
+      margin: .5rem 0;
       border-radius: 0.25rem;
 
       color: var(--light);
@@ -60,7 +66,7 @@ export const Content = styled.div`
       font-weight: 300;
       font-size: 1rem;
 
-      transition: border-color 0.2s;
+      transition: border-color 0.2s ease-in-out;
 
       &:hover {
         border-color: ${darken(0.2, '#f8f9fa')}
@@ -70,11 +76,25 @@ export const Content = styled.div`
         color: var(--light);
       }
     }
+
+    textarea {
+      height: 8rem;
+      resize: none;
+    }
+
+    span {
+      color: #cc0033;
+    }
+  }
+
+  @media (max-width: 430px) {
+    width: 80%;
   }
 `
 
 export const Button = styled.button`
   padding: 0.7rem 2rem;
+  margin-top: 0.5rem; 
 
   display: flex;
   align-items: center;
