@@ -9,7 +9,7 @@ export default function Home() {
     <Container>
       <Header />
 
-      <Awards />
+      <Awards id='awards'/>
 
       <Projects />
     </Container>

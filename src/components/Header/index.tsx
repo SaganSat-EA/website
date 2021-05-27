@@ -1,3 +1,5 @@
+import { Link as Scroll } from 'react-scroll'
+
 import {
   Container,
   HeaderContainer,
@@ -13,9 +15,18 @@ export function Header() {
           <h1>SAGANSAT-EA</h1>
           <h3>Um nano satélite brasileiro com uma missão em todo o mundo.</h3>
 
-          <Button>
-            <span>SAIBA MAIS</span>
-          </Button>
+          <Scroll
+            to='awards' 
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact='true'
+            offset={-80}
+          >
+            <Button>
+              <span>SAIBA MAIS</span>
+            </Button>
+          </Scroll>
         </HeaderContent>
       </HeaderContainer>
     </Container>

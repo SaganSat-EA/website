@@ -86,6 +86,7 @@ export const Menu = styled.div<MenuProps>`
 export const MenuLink = styled.a`
   padding: 0 2rem;
   font-weight: 500;
+  cursor: pointer;
 
   &:hover {
     color: ${lighten(0.6, '#6c757d')};

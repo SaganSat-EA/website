@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { Link as Scroll } from 'react-scroll'
 import { FiMenu } from 'react-icons/fi'
 
 import {
@@ -44,9 +46,24 @@ export function Navbar() {
           <FiMenu size={30} />
         </Hamburguer>
         <Menu isOpen={hamburguerIsOpen}>
-          <MenuLink href="/">Sobre a equipe</MenuLink>
-          <MenuLink href="/">Sobre a pesquisa</MenuLink>
-          <MenuLink href="/">Como você pode ajudar?</MenuLink>
+          <Scroll
+            to='awards' 
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact='true'
+            offset={-80}
+          >
+            <MenuLink>Sobre a equipe</MenuLink>
+          </Scroll>
+
+          <Link href={'/pesquisa'}>
+            <MenuLink href="/">Sobre a pesquisa</MenuLink>
+          </Link>
+
+          <Link href={'/ajuda'}>
+            <MenuLink href="/">Como você pode ajudar?</MenuLink>
+          </Link>
         </Menu>
       </NavContent>
     </Nav>
