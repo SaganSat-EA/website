@@ -1,4 +1,4 @@
-import { Header } from '../components/Header'
+import { Header } from '../components/HomeHeader'
 import { Awards } from '../components/Awards'
 import { Projects } from '../components/Projects'
 
