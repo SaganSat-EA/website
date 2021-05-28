@@ -8,7 +8,10 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url('/bg-contact-us.jpg');
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%),
+    url('/bg-contact-us.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

@@ -1,5 +1,6 @@
 import { ContactUs } from './ContactUs'
 import { Nets } from './Nets'
+
 import { Container, Copyright } from './styles'
 
 export function Footer() {
