@@ -28,6 +28,8 @@ export const HeaderContent = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
 
+  transition: all 0.8s ease;
+
   h1 {
     font-size: 1.3rem;
     font-weight: 700;
@@ -41,6 +43,17 @@ export const HeaderContent = styled.div`
     font-size: 1.3rem;
     width: 70%;
     color: var(--light);
+  }
+
+  @media (max-width: 750px) {
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+    }
   }
 `
 
@@ -75,7 +88,7 @@ export const Button = styled.button`
     color: var(--light);
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 750px) {
     padding: 1rem 2rem;
 
       span {
