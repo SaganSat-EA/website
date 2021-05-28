@@ -48,9 +48,11 @@ export const NavContent = styled.div`
   padding: 0 1rem;
 `
 
-export const Logo = styled.a`
+export const Logo = styled(Scroll)`
   font-size: 0.8rem;
   padding: 1.7rem 2rem;
+
+  cursor: pointer;
 `
 
 export const Hamburguer = styled.div`
@@ -74,8 +76,6 @@ export const Menu = styled.div<MenuProps>`
   a.active {
     color: var(--primary);
     border-bottom: 5px solid var(--primary);
-
-    cursor: default;
   }
 
   @media (max-width: 860px) {

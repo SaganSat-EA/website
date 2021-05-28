@@ -7,7 +7,7 @@ import { Container, Content } from './styles'
 
 export function Layout({children}) {
   return (
-    <Container>
+    <Container id='topPage'>
       <Navbar />
       
       <Content>
