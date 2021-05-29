@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
 `
 
-export const Content = styled.div`
+export const Content = styled.main`
   display: flex;
   flex-direction: column;
 

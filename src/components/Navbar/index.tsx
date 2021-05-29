@@ -39,7 +39,7 @@ export function Navbar() {
     <NavContainer navBackground={navBackground}>
       <NavContent>
         <Logo 
-          to='topPage' 
+          to='main' 
           smooth={true}
           duration={1000}
           spy={false}
