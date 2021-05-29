@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import { Card } from './Card'
 
-import { Container, Content, Grid, Card } from './styles'
+import { Container, Content, Grid } from './styles'
 
 export function Development() {
   return (
@@ -13,112 +13,52 @@ export function Development() {
         </span>
         <Grid>
           <Card
-            target='_blank'
-            href='https://github.com/SaganSat-EA/obdh'
-          >
-            <Image 
-              width={600}
-              height={600}
-              src='/obdh.png'
-              alt="OBDH"
-              objectFit='contain'
-            />
-            
-            <h3>
-              OBDH
-            </h3>
-
-            <p>
-              Computador de bordo do satélite responsável por processar todas as informações geradas pela câmera.
-            </p>
-          </Card>
+            link='https://github.com/SaganSat-EA/obdh'
+            imageSrc='/obdh.png'
+            title='OBDH'
+            description='Computador de bordo do satélite responsável por processar todas as informações geradas pela câmera.'
+          />
 
           <Card
-            target='_blank'
-            href='https://github.com/SaganSat-EA/ttc'
-          >
-            <Image 
-              width={600}
-              height={600}
-              src='/ttec.png'
-              alt="TT&C"
-              objectFit='contain'
-            />
+            link='https://github.com/SaganSat-EA/ttc'
+            imageSrc='/ttec.png'
+            title='TT&C'
+            description='Responsável por realizar a comunicação com a base terrestre.'
+          />
 
-            <h3>TT&C</h3>
+          <Card
+            link=''
+            imageSrc='/camera.png'
+            title='Câmera'
+            description='Responsável pela captura de imagens.'
+          />
 
-            <p>
-              Responsável por realizar a comunicação com a base terrestre.
-            </p>
-          </Card>
+          <Card
+            link=''
+            imageSrc='/circuit.jpg'
+            title='ADCS'
+            description='Responsável pelo controle de altitude.'
+          />
+          
+          <Card
+            link=''
+            imageSrc='/circuit.jpg'
+            title='PMAD'
+            description='Responsável pelo gerenciamento da energia solar captada  através das placas fotovoltaicas, carregar as baterias e distribuir pelo satélite.'
+          />
 
-          <Card>
-            <Image 
-              width={600}
-              height={600}
-              src='/camera.png'
-              alt="Câmera"
-              objectFit='contain'
-            />
-
-            <h3>Câmera</h3>
-
-            <p>
-              Responsável pela captura de imagens.
-            </p>
-          </Card>
-
-          <Card>
-            <Image 
-              width={600}
-              height={600}
-              src='/circuit.jpg'
-              alt="ADCS"
-              objectFit='contain'
-            />
-
-            <h3>ADCS</h3>
-
-            <p>
-              Responsável pelo controle de altitude.
-            </p>
-          </Card>
-
-          <Card>
-            <Image 
-              width={600}
-              height={600}
-              src='/circuit.jpg'
-              alt="PMAD"
-              objectFit='contain'
-            />
-
-            <h3>PMAD</h3>
-
-            <p>
-              Responsável pelo gerenciamento da energia solar captada  através das placas fotovoltaicas, carregar as baterias e distribuir pelo satélite.
-            </p>
-          </Card>
-
-          <Card>
-            <Image 
-              width={800}
-              height={800}
-              src='/cubesat.png'
-              alt="Estrutura"
-              objectFit='contain'
-            />
-
-            <h3>Estrutura</h3>
-
-            <p>
-              Responsável pela captura de imagens.
-            </p>
-          </Card>
+          <Card
+            link=''
+            imageSrc='/cubesat.png'
+            title='Estrutura'
+            description='Responsável pela captura de imagens.'
+          />
         </Grid>
+
         <span>
           As etapas planejadas estão disponíveis em nosso <a>Roadmap</a> e você pode acompanhar o desenvolvimento em nosso <a target='_blank' href='https://github.com/SaganSat-EA'>Github</a>.
         </span>
+        
       </Content>
     </Container>
   )
