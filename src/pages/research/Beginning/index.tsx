@@ -1,6 +1,6 @@
 import { Container, Content } from './style'
 
-export function Beginning({id}) {
+export function Beginning({ id }) {
   return (
     <Container id={id}>
       <Content>
