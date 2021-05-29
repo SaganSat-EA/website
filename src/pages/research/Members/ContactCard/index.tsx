@@ -1,6 +1,6 @@
 import { MdEmail } from 'react-icons/md'
 import { BiPhone } from 'react-icons/bi'
-import { AiOutlineInstagram, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiOutlineInstagram, AiFillGithub, AiFillLinkedin, AiOutlineLink } from 'react-icons/ai'
 
 import { 
   Container,
@@ -21,6 +21,7 @@ interface ContactCardProps {
   linkedin?: string
   email?: string
   instagram?: string
+  externalLink?: string
 }
 
 export function ContactCard(props: ContactCardProps) {
@@ -105,6 +106,18 @@ export function ContactCard(props: ContactCardProps) {
                 href={props.instagram}
               >
                 <AiOutlineInstagram
+                  className='icon'
+                  size={25}
+                />
+              </IconLink>
+            : null}
+
+            {props.externalLink ?
+              <IconLink
+                target='_blank'
+                href={props.externalLink}
+              >
+                <AiOutlineLink
                   className='icon'
                   size={25}
                 />

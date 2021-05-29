@@ -55,6 +55,20 @@ export function Members() {
             description='Lorem ipsum dolor sit amet consectetur adipiscing elit nunc suspendisse senectus, mattis nostra arcu purus dapibus fusce interdum semper vel.'
           />
         </CardsContainer>
+
+        <h1>Orientadores</h1>
+
+        <span>
+          Tal como não existe missão sem tripulantes, não existe tripulação sem treino e preparação! Conheça um pouco mais sobre aqueles que os conduzem.
+        </span>
+        <CardsContainer>
+          <ContactCard 
+            name='Edilson Alexandre Camargo'
+            subTitle='Doutor em Engenharia Eletrônica - Fotônica, São Paulo - BR'
+            description='Pesquisador do Instituto de Aeronáutica e Espaço, uma instituição que pertence ao Departamento de Ciência e Tecnologia Aeroespacial, em São José dos Campos, Brasil, onde vem desenvolvendo pesquisas sobre a aplicação de Análise Modal Operacional aplicado a Estruturas Aeronáuticas e Espaciais.'
+            externalLink='http://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=6F62CD655C09E64F05C8952FB3BA96F6.buscatextual_0'
+          />
+        </CardsContainer>
       </Content>
     </Container>
   )

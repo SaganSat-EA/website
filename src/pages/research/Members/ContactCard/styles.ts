@@ -19,6 +19,7 @@ export const Container = styled.div`
 
   img {
     max-width: 350px;
+    object-fit: cover;
 
     border-radius: 18px;
 
