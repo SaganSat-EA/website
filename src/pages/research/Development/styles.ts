@@ -18,12 +18,20 @@ export const Content = styled.div`
     font-weight: 600;
 
     color: var(--light);
+
+    transition: all 0.6s ease;
+
+    @media (max-width: 650px) {
+      font-size: 1.8rem;
+    }
   }
 
   span {
     font-size: 1.2rem;
     
     color: var(--secondary);
+
+    transition: all 0.6s ease;
 
     a {
       font-weight: 650;
@@ -35,6 +43,10 @@ export const Content = styled.div`
         text-decoration: underline;
         color: var(--primary);
       }
+    }
+
+    @media (max-width: 650px) {
+      font-size: .9rem;
     }
   }
 `
