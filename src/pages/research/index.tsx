@@ -1,6 +1,7 @@
 import { Header } from './Header'
 import { Beginning } from './Beginning'
 import { Development } from './Development'
+import { Members } from './Members'
 
 import { Container } from './styles'
 
@@ -12,6 +13,8 @@ export default function Research() {
       <Beginning id='beginning' />
 
       <Development />
+
+      <Members />
     </Container>
   )
 }
