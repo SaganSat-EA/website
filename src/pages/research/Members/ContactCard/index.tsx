@@ -12,7 +12,7 @@ import {
 } from './styles'
 
 interface ContactCardProps {
-  avatar: string
+  avatar?: string
   name: string
   subTitle: string
   description: string
@@ -29,7 +29,7 @@ export function ContactCard(props: ContactCardProps) {
   return (
     <Container>
       <img 
-        src={props.avatar}
+        src={props.avatar ? props.avatar : '/user.png'}
         alt={props.name}
       />
 

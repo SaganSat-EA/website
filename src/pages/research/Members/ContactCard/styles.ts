@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  margin-bottom: 3.5rem;
+
   display: flex;
   width: 100%;
 
