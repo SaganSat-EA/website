@@ -3,8 +3,8 @@ import * as Yup from 'yup'
 import emailjs from 'emailjs-com'
 import { FiSend } from 'react-icons/fi'
 
-import { Input } from '../../Form/input'
-import { TextArea } from '../../Form/textArea'
+import { Input } from '../Form/input'
+import { TextArea } from '../Form/textArea'
 
 import { Container, Content, Form, Button } from './styles'
 import { toast } from 'react-toastify'
