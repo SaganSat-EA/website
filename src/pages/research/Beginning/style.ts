@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
   height: 100vh;
+  padding: 5rem 0; 
 
-  background: linear-gradient(to bottom, #000000 0%, #fff 100%, rgba(0, 0, 0, 0.1) 100%);
+  background: var(--light);
 
   @media (max-width: 500px) {
     height: 100%;
@@ -12,7 +13,6 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   max-width: 720px;
-  height: 100%;
   margin: 0 auto;
   padding: 4rem 2rem;
 
@@ -21,8 +21,16 @@ export const Content = styled.div`
   justify-content: center;
   align-items: flex-start;
 
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  border-radius: 15px;
+
   background: var(--light);
-  box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+
+  transition: all 0.8s ease;
+
+  @media (max-width: 800px) {
+    box-shadow: none;
+  }
 
   h1 {
     font-size: 2rem;

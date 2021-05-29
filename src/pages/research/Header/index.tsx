@@ -19,7 +19,7 @@ export function Header() {
             duration={1000}
             spy={true}
             exact='true'
-            offset={-80}
+            offset={-70}
           >
             <Button>
               <span>SAIBA MAIS</span>
