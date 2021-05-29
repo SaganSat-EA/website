@@ -1,3 +1,5 @@
+import { Link as Scroll } from 'react-scroll'
+
 import { Container, HeaderContainer, HeaderContent, Button } from './style'
 
 export function Header() {
@@ -11,9 +13,18 @@ export function Header() {
             Desenvolver um CubeSat capaz de monitorar a emissão de plumas vulcânicas e notificar os orgões e empresas responsáveis por rotas comerciais de aeronaves no intuito de evitar possíveis acidentes.
           </p>
 
-          <Button>
-            <span>SAIBA MAIS</span>
-          </Button>
+          <Scroll
+            to='beginning' 
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact='true'
+            offset={-80}
+          >
+            <Button>
+              <span>SAIBA MAIS</span>
+            </Button>
+          </Scroll>
         </HeaderContent>
       </HeaderContainer>
     </Container>
