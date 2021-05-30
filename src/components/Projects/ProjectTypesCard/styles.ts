@@ -82,6 +82,19 @@ export const CardContent = styled.div<CardContentProps>`
     font-weight: 650;
 
     color: var(--secondary);
+
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-weight: bold;
+      transition: all 0.5s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--primary);
+      }
+    }
   }
 
   hr {

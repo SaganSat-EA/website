@@ -55,6 +55,17 @@ export const Description = styled.div`
 
   span {
     color: var(--secondary);
+
+    a {
+      padding-left: 8px;
+
+      transition: all 0.5s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--primary);
+      }
+    }
   }
 
   @media (max-width: 820px) {

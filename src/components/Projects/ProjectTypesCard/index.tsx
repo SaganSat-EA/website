@@ -14,11 +14,17 @@ export function ProjectTypesCard() {
       <Card>
         <CardContent alignItems='left'>
           <h2>
-            Projeto aberto
+            Projeto Open-source
           </h2>
 
           <span>
-            Nosso projeto estará disponível no github quando finalizado, fique de olho e não deixe de acessar!
+            Nosso projeto está disponível em nosso Github pois acreditamos que dessa maneira contribuímos em novos projetos e pesquisas em nosso país e no mundo inteiro.
+            <a
+              target='_blank'
+              href='https://github.com/SaganSat-EA'
+            >
+              Acesse a organização.
+            </a>
           </span>
 
           <hr />
@@ -27,11 +33,11 @@ export function ProjectTypesCard() {
       <Card>
         <CardContent alignItems='right'>
           <h2>
-            Inteligência artificial
+            Inteligência Artificial
           </h2>
 
           <span>
-            Nosso satélite conta com inteligência artifical para o pós-processamento da imagem.
+            Nosso satélite utiliza inteligência artificial, um dos pilares que guiam o nosso desenvolvimento.
           </span>
 
           <hr />
