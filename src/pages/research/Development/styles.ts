@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
   background: var(--black);
+
+  border-top: 1px solid var(--gray-dark);
 `
 
 export const Content = styled.div`

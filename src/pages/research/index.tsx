@@ -12,9 +12,9 @@ export default function Research() {
 
       <Beginning id='beginning' />
 
-      <Development />
-
       <Members />
+
+      <Development />
     </Container>
   )
 }
