@@ -1,6 +1,5 @@
 import { MdEmail } from 'react-icons/md'
 import { AiOutlineInstagram, AiFillGithub, AiFillHeart, AiFillLinkedin } from 'react-icons/ai'
-import { IoLogoTwitter } from 'react-icons/io'
 import { CgMail } from 'react-icons/cg'
 
 import { Card, Container, SocialContainer, DeveloperContainer, IconLink } from './styles'
@@ -36,21 +35,20 @@ export function Nets() {
       </Card>
 
       <SocialContainer>
-        <IconLink href=''>
-          <IoLogoTwitter 
-            className='icon'
-            size={20}
-          />
-        </IconLink>
-          
-        <IconLink href=''>
+        <IconLink
+          target='_blank'
+          href='https://www.instagram.com/sagansat/'
+        >
           <AiOutlineInstagram
             className='icon'
             size={20}
           />
         </IconLink>
 
-        <IconLink href=''>
+        <IconLink
+          target='_blank'
+          href='https://github.com/SaganSat-EA'
+        >
           <AiFillGithub
             className='icon'
             size={20}

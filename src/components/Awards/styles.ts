@@ -4,6 +4,11 @@ import { darken } from 'polished'
 export const Container = styled.section`
   height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 `
 

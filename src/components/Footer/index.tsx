@@ -12,7 +12,7 @@ export function Footer() {
 
     <Copyright>
       <h4>
-      Copyright © Sagan {new Date().getFullYear()}
+        Copyright © Sagan {new Date().getFullYear()}
       </h4>
     </Copyright>
    </Container> 
