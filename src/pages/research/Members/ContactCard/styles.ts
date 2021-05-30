@@ -17,6 +17,10 @@ export const Container = styled.div`
     border-right: 18px solid var(--primary);
   }
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   img {
     max-width: 350px;
     object-fit: cover;

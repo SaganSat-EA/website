@@ -1,3 +1,4 @@
+import { darken, transparentize } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.section`
@@ -50,4 +51,67 @@ export const Content = styled.div`
 
 export const CardsContainer = styled.div`
   padding-top: 1.5rem;
+`
+
+export const BecomeSupporterContent = styled.div`
+  padding-top: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    padding: 1rem;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+
+    background-color: var(--black);
+    background-image: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255, 0));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+    transition: all 0.6 ease;
+
+    @media (max-width: 420px) {
+      font-size: 1.3rem;
+    }
+  }
+`
+
+export const Button = styled.button`
+  padding: 1rem 4rem;
+  margin-top: 0.5rem; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: ${transparentize(0.4, '#64a19d')};
+
+  border: 0;
+  border-radius: 8px;
+
+  transition: all 0.4s ease;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+    background: ${darken(0.3, '#64a19d')}
+  }
+
+  span {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+
+    color: var(--light);
+  }
 `
