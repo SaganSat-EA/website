@@ -38,9 +38,8 @@ export function Navbar() {
   return (
     <NavContainer navBackground={navBackground}>
       <NavContent>
-      <Link href={'/'}>
         <Logo 
-          to='topPage' 
+          to='main' 
           smooth={true}
           duration={1000}
           spy={false}
@@ -51,7 +50,6 @@ export function Navbar() {
             SaganSat
           </h1>
         </Logo>
-      </Link>
         <Hamburguer onClick={() => setHamburguerIsOpen(!hamburguerIsOpen)}>
           <FiMenu size={30} />
         </Hamburguer>
@@ -71,7 +69,17 @@ export function Navbar() {
           </Link>
 
           <Link href={'/research'}>
-            <MenuLink>Sobre a pesquisa</MenuLink>
+            <MenuLink
+              to='research' 
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact='true'
+              offset={-80}
+              activeClass={router.pathname === '/research' ? 'active' : 'disable'}
+            >
+              Sobre a pesquisa
+            </MenuLink>
           </Link>
 
           <Link href={'/help'}>

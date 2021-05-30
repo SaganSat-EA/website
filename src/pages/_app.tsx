@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Sagan</title>
+        <title>SaganSat</title>
       </Head>
 
       <GlobalStyle/>
