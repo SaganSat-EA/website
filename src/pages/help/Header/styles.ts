@@ -92,6 +92,8 @@ export const ChartTitle = styled.div`
   }
 
   .icon {
+    cursor: default;
+
     color: var(--primary);
   }
 `

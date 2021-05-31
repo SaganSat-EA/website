@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link as Scroll } from 'react-scroll'
 import { IoArrowUpCircleOutline } from 'react-icons/io5'
 import { MdKeyboardArrowDown } from 'react-icons/md'
@@ -5,6 +6,8 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 import { Container, Chart, ChartTitle } from './styles'
 
 export function Header() {
+  const [amount, setAmount] = useState(0)
+
   return(
     <Container>
       <h1>
@@ -25,7 +28,10 @@ export function Header() {
           />
         </ChartTitle>
 
-        <h5>R$ 10.000,00</h5>
+        <h5>{new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+          }).format(amount)}</h5>
       </Chart>
 
       <Scroll
