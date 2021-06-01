@@ -7,7 +7,6 @@ interface IconHexagonProps {
 }
 
 export const Container = styled.a`
-  margin: 0 1rem; 
   padding: 2rem 4rem;
 
   display: flex;

@@ -9,9 +9,10 @@ import { Container, IconHexagon } from './styles'
 interface CardDonateProps {
   title: string
   link: string
+  className: string
 }
 
-export function CardDonate({ title, link }: CardDonateProps) {
+export function CardDonate({ title, link, className }: CardDonateProps) {
   const isLinkUrl = link.substr(0,4) === 'http'
 
   function handleCardClick() {
@@ -28,6 +29,7 @@ export function CardDonate({ title, link }: CardDonateProps) {
 
   return (
     <Container
+      className={className}
       onClick={handleCardClick}
     >
       {title === 'vakinha' ? 
