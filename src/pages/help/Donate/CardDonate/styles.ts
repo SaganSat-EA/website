@@ -15,7 +15,7 @@ export const Container = styled.a`
   justify-content: center;
 
   cursor: pointer;
-  border: 1px solid ${lighten(0.1, '#202227')};
+  border: 3px solid ${lighten(0.1, '#202227')};
   border-radius: 8px;
 
   background: #202227;
@@ -39,9 +39,9 @@ export const Container = styled.a`
   }
 
   &:hover {
-    border: 1px solid var(--primary);
+    border: 3px solid var(--primary);
 
-    img {
+    img, .icon {
       transition: all 0.6s ease;
 
       -webkit-transform: scale(1.1);
@@ -98,7 +98,8 @@ export const IconHexagon = styled.div<IconHexagonProps>`
 
   .icon {
     position: absolute;
-
     left: 22px;
+
+    transition: all 0.6s ease;
   }
 `

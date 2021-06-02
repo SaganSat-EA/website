@@ -1,3 +1,4 @@
+import { lighten } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.section`
@@ -40,6 +41,19 @@ export const Content = styled.div`
 
     transition: all 0.6s ease;
 
+    a {
+      font-weight: bold;
+      
+      color: ${lighten(0.1, '#64a19d')};
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--primary);
+      }
+    }
+
     @media (max-width: 650px) {
       font-size: .9rem;
     }
@@ -51,7 +65,7 @@ export const Content = styled.div`
   }
 `
 
-export const DonateCards = styled.div`
+export const DonateCards = styled.section`
   padding: 2rem 0;
   display: flex;
 

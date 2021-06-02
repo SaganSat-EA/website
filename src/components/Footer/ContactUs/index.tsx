@@ -15,7 +15,7 @@ interface Contact {
   message: string
 }
 
-export function ContactUs() {
+export function ContactUs({ id }) {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false)
   const formRef = useRef(null)
 
@@ -75,7 +75,7 @@ export function ContactUs() {
   }
 
   return (
-    <Container>
+    <Container id={id}>
       <Content>
         <FiSend 
           size={45}

@@ -1,5 +1,4 @@
 import { toast } from 'react-toastify'
-import { BsBrightnessHigh } from 'react-icons/bs'
 import { BiBitcoin } from 'react-icons/bi'
 import { RiPixelfedLine, RiHandCoinLine } from 'react-icons/ri'
 import { SiEthereum } from 'react-icons/si'
@@ -89,10 +88,11 @@ export function CardDonate({ title, link, className }: CardDonateProps) {
           background='#642b73'
           gradient='#c6426e'
         >
-          <BsBrightnessHigh
+          <img
             className='icon'
-            color='white' 
-            size={60}
+            width={60}
+            height={60}
+            src='/cardano-logo.svg'
           />
         </IconHexagon>
       : null}

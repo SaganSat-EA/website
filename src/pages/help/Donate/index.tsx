@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
+import { Link as Scroll } from 'react-scroll'
 import 'keen-slider/keen-slider.min.css'
 
 import { CardDonate } from './CardDonate'
@@ -134,10 +135,41 @@ export function Donate({ id }) {
         </DonateCards>
         
         <section>
+          <h1>Parcerias</h1>
+
+          <span>
+            Você é empreendedor ou responsável por uma sociedade, empresa ou instituição? Entre em
+            <Scroll
+              to='contactUs' 
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              <a> contato </a>
+            </Scroll>
+            conosco e se torne patrocinador da nossa pesquisa.
+          </span>
+        </section>
+
+        <section>
+
           <h1>Compre uma peça</h1>
 
           <span>
-            Você comercializa componentes eletrônicos ou possui conhecimento para comprar? Entre em contato conosco e se torne patrocinador do projeto contribuindo com os componentes necessários para a construção do CubeSat.
+            Você comercializa componentes eletrônicos ou possui conhecimento para comprar? Entre em
+            <Scroll
+              to='contactUs' 
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              <a> contato </a>
+            </Scroll>
+            conosco e se torne patrocinador do projeto contribuindo com os componentes necessários para a construção do CubeSat.
           </span>
         </section>
         
@@ -145,7 +177,18 @@ export function Donate({ id }) {
           <h1>Construa uma peça</h1>
 
           <span>
-            Você possui capacidade de produção eletrônica ou estrutural? Entre em contato conosco e se torne patrocinador do projeto nos ajudando na construção de nossas placas e peças da estrutura do CubeSat.
+            Você possui capacidade de produção eletrônica ou estrutural? Entre em 
+            <Scroll
+              to='contactUs' 
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact='true'
+              offset={-80}
+            >
+              <a> contato </a>
+            </Scroll>
+            conosco e se torne patrocinador do projeto nos ajudando na construção de nossas placas e peças da estrutura do CubeSat.
           </span>
         </section>
 
@@ -153,7 +196,7 @@ export function Donate({ id }) {
           <h1>Compartilhe</h1>
 
           <span>
-            Você pode nos ajudar com a divulgação da pesquisa. Basta compartilhar nosso site ou nossas redes sociais com sua família e amigos! Isso nos ajuda a promover a pesquisa, atrair novas pessoas para essa área maravilhosa e concluir nossa missão.
+            Você pode nos ajudar com a divulgação da pesquisa. Basta <a>compartilhar</a> nosso site ou nossas redes sociais com sua família e amigos! Isso nos ajuda a promover a pesquisa, atrair novas pessoas para essa área maravilhosa e concluir nossa missão.
           </span>
         </section>
       </Content>
