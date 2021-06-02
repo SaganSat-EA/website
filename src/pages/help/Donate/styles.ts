@@ -11,6 +11,10 @@ export const Content = styled.div`
   margin: 0 auto;
   padding: 2rem;
 
+  section {
+    padding-bottom: 2.5rem;
+  }
+
   h1 {
     font-size: 2rem;
     font-weight: 600;
