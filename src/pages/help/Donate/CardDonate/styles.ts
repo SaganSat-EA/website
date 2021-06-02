@@ -48,6 +48,10 @@ export const Container = styled.a`
       transform: scale(1.1);
     }
   }
+
+  @media (max-width: 410px) {
+    padding: 2rem;
+  }
 `
 
 export const IconHexagon = styled.div<IconHexagonProps>`

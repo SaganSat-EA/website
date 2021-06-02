@@ -42,13 +42,27 @@ export const Content = styled.div`
   }
 
   @media (max-width: 1150px) {
+    max-width: 800px;
     width: 100%;
   }
 `
 
-export const CardsRow = styled.div`
+export const DonateCards = styled.div`
   padding: 2rem 0;
   display: flex;
+
+  .donate_card {
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 1110px) {
+    max-width: 700px;
+    margin: 0 auto;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .arrow {
     width: 30px;
