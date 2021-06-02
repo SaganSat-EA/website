@@ -1,12 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link as Scroll } from 'react-scroll'
 import { IoArrowUpCircleOutline } from 'react-icons/io5'
 import { MdKeyboardArrowDown } from 'react-icons/md'
+import { Circle } from 'rc-progress'
 
-import { Container, Content, Chart, ChartTitle } from './styles'
+import { Container, Content, Chart, ProgressBar, ChartTitle } from './styles'
 
 export function Header() {
   const [amount, setAmount] = useState(0)
+  const [percentAmount, setPercentAmount] = useState(0)
+
+  useEffect(() => {
+    function percentAmountProgress() {
+      const expectedAmount = 150000
+      const percent = (amount * 100) / expectedAmount
+  
+      setPercentAmount(Math.floor(percent))
+    }
+
+    percentAmountProgress()
+  }, [])
 
   return(
     <Container>
@@ -29,10 +42,17 @@ export function Header() {
             />
           </ChartTitle>
 
-          <h5>{new Intl.NumberFormat('pt-BR', {
-              style: 'currency',
-              currency: 'BRL',
-            }).format(amount)}</h5>
+          <ProgressBar>
+            <Circle
+              className='progress-circle'
+              percent={percentAmount} 
+              strokeWidth={6}
+              strokeLinecap='round'
+              strokeColor='#64a19d'
+            />
+
+            <h5>{percentAmount}%</h5>
+          </ProgressBar>
         </Chart>
 
         <Scroll

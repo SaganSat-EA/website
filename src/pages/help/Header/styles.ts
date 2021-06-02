@@ -10,7 +10,7 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   max-width: 1000px;
-  padding: 10rem 1.5rem; 
+  padding: 8rem 1.5rem; 
   margin: 0 auto;
 
   display: flex;
@@ -53,40 +53,24 @@ export const Content = styled.div`
 `
 
 export const Chart = styled.div`
-  margin: 5rem 0;
+  margin: 2.5rem 0;
 
   padding: 2rem 4rem;
 
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 
   border-radius: 15px;
 
   opacity: 0.7;
   background: var(--gray-dark);
-
-  h5 {
-    font-weight: 600;
-    font-size: 5rem;
-
-    color: var(--light);
-
-    transition: all 0.6s ease;
-
-    @media (max-width: 600px) {
-      font-size: 3rem;
-    }
-
-    @media (max-width: 430px) {
-      font-size: 2.6rem;
-    }
-  }
 `
 
 export const ChartTitle = styled.div`
+  padding-bottom: 2rem;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   h3 {
     font-weight: 600;
@@ -99,8 +83,35 @@ export const ChartTitle = styled.div`
   }
 
   .icon {
+    margin-left: 1rem;
     cursor: default;
 
     color: var(--primary);
+  }
+`
+
+export const ProgressBar = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h5 {
+    font-weight: 600;
+    font-size: 3rem;
+
+    position: absolute;
+    color: var(--light);
+
+    transition: all 0.6s ease;
+
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 2.6rem;
+    }
   }
 `

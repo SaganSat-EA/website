@@ -80,6 +80,11 @@ export const DonateCards = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .arrow {
+      cursor: default !important;
+      opacity: 0;
+    }
   }
 
   .arrow {
