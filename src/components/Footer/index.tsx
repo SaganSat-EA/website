@@ -6,7 +6,7 @@ import { Container, Copyright } from './styles'
 export function Footer() {
   return (
    <Container>
-    <ContactUs />
+    <ContactUs id='contactUs'/>
 
     <Nets />
 

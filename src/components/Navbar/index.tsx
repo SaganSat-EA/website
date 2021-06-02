@@ -83,7 +83,15 @@ export function Navbar() {
           </Link>
 
           <Link href={'/help'}>
-            <MenuLink>Como você pode ajudar?</MenuLink>
+            <MenuLink
+              to='help' 
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact='true'
+              offset={-80}
+              activeClass={router.pathname === '/help' ? 'active' : 'disable'}
+            >Como você pode ajudar?</MenuLink>
           </Link>
         </Menu>
       </NavContent>
