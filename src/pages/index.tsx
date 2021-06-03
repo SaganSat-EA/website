@@ -1,6 +1,6 @@
-import { Header } from '../components/HomeHeader'
-import { Awards } from '../components/Awards'
-import { Projects } from '../components/Projects'
+import { Header } from '../components/Home/Header'
+import { Awards } from '../components/Home/Awards'
+import { Projects } from '../components/Home/Projects'
 
 import { Container } from '../styles/home'
 
