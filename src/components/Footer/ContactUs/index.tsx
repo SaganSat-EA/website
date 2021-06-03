@@ -19,6 +19,12 @@ export function ContactUs({ id }) {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false)
   const formRef = useRef(null)
 
+  const emailJs = {
+    serviceId: 'sagan_sat',
+    templateId: 'template_7x7ky8h',
+    userId: 'user_b4gzjCyjuo9luPAeTNa3p'
+  }
+
   async function handleSubmit(data: Contact, { reset }) {
     try {
       setIsButtonDisabled(true)
@@ -62,7 +68,7 @@ export function ContactUs({ id }) {
   }
 
   function sendEmail(data: Contact) {
-    emailjs.send('gmailLis', 'template_8lfaufr', data, 'user_dS1fuSIzGZhrq6PvGmtOV')
+    emailjs.send(emailJs.serviceId, emailJs.templateId, data, emailJs.userId)
       .then(() => {
         toast.dark('Sua mensagem foi enviada para equipe Sagan ✔')
         setIsButtonDisabled(false)
