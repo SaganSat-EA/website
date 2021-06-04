@@ -1,7 +1,7 @@
-import { Header } from '../../components/Help/Header'
-import { Donate } from '../../components/Help/Donate'
+import { Header } from './Header'
+import { Donate } from './Donate'
 
-import { Container } from '../../styles/help'
+import { Container } from './styles'
 
 export default function Help() {
   return (
