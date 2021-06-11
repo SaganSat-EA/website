@@ -69,24 +69,6 @@ export const DonateCards = styled.section`
   padding: 2rem 0;
   display: flex;
 
-  .donate_card {
-    margin: 1rem 0;
-  }
-
-  @media (max-width: 1110px) {
-    max-width: 700px;
-    margin: 0 auto;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .arrow {
-      cursor: default !important;
-      opacity: 0;
-    }
-  }
-
   .arrow {
     width: 30px;
     height: 30px;
@@ -108,6 +90,6 @@ export const DonateCards = styled.section`
   }
 
   .arrow--disabled {
-    fill: rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.1);
   }
 `
