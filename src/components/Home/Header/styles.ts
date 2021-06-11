@@ -4,7 +4,7 @@ import { transparentize } from 'polished'
 export const Container = styled.header`
   display: inline-block;
 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url('/bg-home.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url('/images/bg-home.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

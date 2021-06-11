@@ -20,7 +20,7 @@ export function Awards() {
           </a>
         </Description>
 
-        <img src="/nanosat.png" alt="NanoSat" />
+        <img src="/images/nanosat.png" alt="NanoSat" />
       </Content>
     </Container>
   )

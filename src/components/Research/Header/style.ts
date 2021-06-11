@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
   display: inline-block;
 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 75%, #000000 100%), url('/bg-research.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 75%, #000000 100%), url('/images/bg-research.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

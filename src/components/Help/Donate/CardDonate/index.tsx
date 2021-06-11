@@ -92,7 +92,7 @@ export function CardDonate({ title, link, className }: CardDonateProps) {
             className='icon'
             width={60}
             height={60}
-            src='/cardano-logo.svg'
+            src='/images/cardano-logo.svg'
           />
         </IconHexagon>
       : null}
@@ -101,7 +101,7 @@ export function CardDonate({ title, link, className }: CardDonateProps) {
         {title}
       </h3>
 
-      <img src={`/${title}-qr.svg`} alt='QrCode' />
+      <img src={`/images/${title}-qr.svg`} alt='QrCode' />
     </Container>
   )
 }
