@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import { useKeenSlider } from 'keen-slider/react'
+import { useState } from 'react'
 import { Link as Scroll } from 'react-scroll'
+import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 
 import { CardDonate } from './CardDonate'
@@ -8,52 +8,29 @@ import { CardDonate } from './CardDonate'
 import { Container, Content, DonateCards } from './styles'
 
 export function Donate({ id }) {
-  let isPageWide = useMediaQuery('(max-width: 1110px)')
-
   const [currentSlide, setCurrentSlide] = useState(0)
+
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
-    mode: 'free',
     loop: false,
     rtl: false,
-    slidesPerView: 3,
     spacing: 30,
+    dragSpeed: 5,
+    duration: 100,
     initial: 0,
+    slidesPerView: 3,
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide)
+    },
+    breakpoints: {
+      '(max-width: 1110px)': {
+        slidesPerView: 1
+      }
     }
   })
 
-  function useMediaQuery(query) {
-    const [matches, setMatches] = useState(false)
-  
-    useEffect(() => {
-      const media = window.matchMedia(query)
-      if (media.matches !== matches) {
-        setMatches(media.matches)
-      }
-
-      const listener = () => {
-        setMatches(media.matches)
-      }
-
-      //delete style property
-      const elements = Array.from(document.getElementsByClassName('donate_card') as HTMLCollectionOf<HTMLElement>)
-      
-      elements.forEach(element => {
-        element.removeAttribute("style")
-      })
-
-      media.addListener(listener)
-      
-      document.getElementsByTagName("a")[0].removeAttribute("style");
-      return () => media.removeListener(listener)
-    }, [matches, query])
-  
-    return matches
-  }
-
   function ArrowLeft(props) {
     const disabeld = props.disabled ? " arrow--disabled" : ""
+
     return (
       <svg
         onClick={props.onClick}
@@ -68,6 +45,7 @@ export function Donate({ id }) {
   
   function ArrowRight(props) {
     const disabeld = props.disabled ? " arrow--disabled" : ""
+
     return (
       <svg
         onClick={props.onClick}
@@ -89,33 +67,33 @@ export function Donate({ id }) {
           Você pode doar o valor que puder para nos ajudar a concluir nossa missão.
         </span>
 
-        <DonateCards ref={sliderRef} className={isPageWide ? '' : 'keen-slider'}>
+        <DonateCards ref={sliderRef} className={'keen-slider'}>
           <CardDonate
-            className={isPageWide ? 'donate_card' : 'keen-slider__slide number-slide1'}
+            className={'keen-slider__slide number-slide1'}
             title='vakinha'
             link='https://www.vakinha.com.br/vaquinha/sagansat-ea'
           />
 
           <CardDonate
-            className={isPageWide ? 'donate_card' : 'keen-slider__slide number-slide2'}
+            className={'keen-slider__slide number-slide2'}
             title='pix'
             link='02422004-3c2f-4f97-a1fb-c2b8c50bad7c'
           />
 
           <CardDonate
-            className={isPageWide ? 'donate_card' : 'keen-slider__slide number-slide3'}
+            className={'keen-slider__slide number-slide3'}
             title='bitcoin'
             link='https://www.blockchain.com/pt/btc/address/bc1qt7jvy2fkncaye0jx5m0g4pcez3rz0sc04xnkha'
           />
 
           <CardDonate
-            className={isPageWide ? 'donate_card' : 'keen-slider__slide number-slide4'}
+            className={'keen-slider__slide number-slide4'}
             title='ethereum'
             link='https://etherscan.io/address/0xd3B29C2F87EB36367a23e9B023B23C450f54fA6D'
           />
 
           <CardDonate
-            className={isPageWide ? 'donate_card' : 'keen-slider__slide number-slide5'}
+            className={'keen-slider__slide number-slide5'}
             title='cardano'
             link='https://cardanoscan.io/address/012e0dd1eb70c2083332df98c77703f739a0fa88064145d49297c2bac02e0dd1eb70c2083332df98c77703f739a0fa88064145d49297c2bac0'
           />

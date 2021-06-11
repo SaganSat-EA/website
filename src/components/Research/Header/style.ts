@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
   display: inline-block;
 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 75%, #000000 100%), url('/bg-research.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 75%, #000000 100%), url('/images/bg-research.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -35,6 +35,8 @@ export const HeaderContent = styled.div`
     font-weight: 700;
     letter-spacing: .2rem;
     text-transform: uppercase;
+    text-align: center;
+
     color: var(--primary);
   }
 
@@ -49,8 +51,12 @@ export const HeaderContent = styled.div`
     justify-content: center;
     align-items: center;
 
+    h1 {
+      font-size: 2rem;
+    }
+
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       width: 100%;
       text-align: center;
     }
@@ -86,17 +92,5 @@ export const Button = styled.button`
     letter-spacing: 0.15rem;
 
     color: var(--light);
-  }
-
-  @media (max-width: 750px) {
-    padding: 1rem 2rem;
-
-      span {
-      font-size: 0.5rem;
-      font-weight: 500;
-      letter-spacing: 0.15rem;
-
-      color: var(--light);
-    }
   }
 `

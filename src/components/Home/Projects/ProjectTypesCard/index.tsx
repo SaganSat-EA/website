@@ -8,7 +8,7 @@ export function ProjectTypesCard() {
       <Image 
         width={820}
         height={500}
-        src='/hardware.jpg'
+        src='/images/hardware.jpg'
         objectFit='fill'
       />
       <Card>
@@ -46,7 +46,7 @@ export function ProjectTypesCard() {
       <Image 
         width={820}
         height={500}
-        src='/ia.jpg'
+        src='/images/ia.jpg'
         objectFit='fill'
       />
     </Container>

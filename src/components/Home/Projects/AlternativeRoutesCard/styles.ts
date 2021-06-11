@@ -9,7 +9,6 @@ export const Container = styled.section`
   border-radius: 9px;
 
   img {
-    max-height: 300px;
     border-radius: 9px;
   }
 

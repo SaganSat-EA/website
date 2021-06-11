@@ -1,7 +1,7 @@
 import { ToastContainer, Slide } from 'react-toastify'
 
-import { Footer } from '../Footer'
-import { Navbar } from '../Navbar'
+import { Footer } from './Footer'
+import { Navbar } from './Navbar'
 
 import { Container, Content } from './styles'
 

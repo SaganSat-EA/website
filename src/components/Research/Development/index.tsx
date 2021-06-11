@@ -14,42 +14,42 @@ export function Development() {
         <Grid>
           <Card
             link='https://github.com/SaganSat-EA/obdh'
-            imageSrc='/obdh.png'
+            imageSrc='/images/obdh.png'
             title='OBDH'
             description='Computador de bordo do satélite responsável por processar todas as informações geradas pela câmera.'
           />
 
           <Card
             link='https://github.com/SaganSat-EA/ttc'
-            imageSrc='/ttec.png'
+            imageSrc='/images/ttec.png'
             title='TT&C'
             description='Responsável por realizar a comunicação com a base terrestre.'
           />
 
           <Card
             link=''
-            imageSrc='/camera.png'
+            imageSrc='/images/camera.png'
             title='Câmera'
             description='Responsável pela captura de imagens.'
           />
 
           <Card
             link=''
-            imageSrc='/circuit.jpg'
+            imageSrc='/images/circuit.jpg'
             title='ADCS'
             description='Responsável pelo controle de altitude.'
           />
           
           <Card
             link=''
-            imageSrc='/circuit.jpg'
+            imageSrc='/images/circuit.jpg'
             title='PMAD'
             description='Responsável pelo gerenciamento da energia solar captada  através das placas fotovoltaicas, carregar as baterias e distribuir pelo satélite.'
           />
 
           <Card
             link=''
-            imageSrc='/cubesat.png'
+            imageSrc='/images/cubesat.png'
             title='Estrutura'
             description='Responsável pela captura de imagens.'
           />

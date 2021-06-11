@@ -102,7 +102,7 @@ export function Members() {
           </CardsContainer>
 
           <BecomeSupporterContent>
-            <img width='300px' src="/rocket-animated.gif" alt="Rocket" />
+            <img width='300px' src="/images/rocket-animated.gif" alt="Rocket" />
 
             <h3>
               Seja um apoiador da pesquisa e contribua com nossa missão!
