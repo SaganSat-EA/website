@@ -22,11 +22,11 @@ export const HeaderContainer = styled.div`
 `
 
 export const HeaderContent = styled.div`
-  margin-top: 15rem;
+  padding: 0 1rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15rem;
 
   h1 {
     font-size: 5rem;
@@ -49,14 +49,16 @@ export const HeaderContent = styled.div`
 
     @media (max-width: 450px) {
       font-weight: 650;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 
   h3 {
-    font-weight: 500;
     padding-top: 5px;
     padding-bottom: 4rem;
+
+    font-weight: 500;
+    text-align: center;
 
     color: rgba(255, 255, 255, 0.8);
 
@@ -64,10 +66,6 @@ export const HeaderContent = styled.div`
 
     @media (max-width: 860px) {
       font-size: 0.8rem;
-    }
-
-    @media (max-width: 450px) {
-      font-size: 0.5rem;
     }
   }
 `
@@ -98,17 +96,5 @@ export const Button = styled.button`
     letter-spacing: 0.15rem;
 
     color: var(--light);
-  }
-
-  @media (max-width: 450px) {
-    padding: 1rem 2rem;
-
-      span {
-      font-size: 0.5rem;
-      font-weight: 500;
-      letter-spacing: 0.15rem;
-
-      color: var(--light);
-    }
   }
 `

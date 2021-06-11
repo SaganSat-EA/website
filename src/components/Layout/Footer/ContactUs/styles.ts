@@ -89,10 +89,6 @@ export const Form = styled(Unform)`
       color: #cc0033;
     }
   }
-
-  @media (max-width: 430px) {
-    width: 80%;
-  }
 `
 
 export const Button = styled.button`

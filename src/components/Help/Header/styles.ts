@@ -10,7 +10,7 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   max-width: 1000px;
-  padding: 8rem 1.5rem; 
+  padding: 6rem 1.5rem; 
   margin: 0 auto;
 
   display: flex;
@@ -21,6 +21,7 @@ export const Content = styled.div`
   h1 {
     font-size: 2.3rem;
     font-weight: 650;
+    text-align: center;
 
     color: var(--primary);
 
