@@ -8,7 +8,7 @@ export function AlternativeRoutesCard() {
       <Image 
         width={1200}
         height={700}
-        src='/routes.jpg'
+        src='/images/routes.jpg'
         objectFit='fill'
       />
 

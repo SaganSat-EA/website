@@ -2,11 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
   height: 100vh;
-  padding: 5rem 0;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   background: var(--light);
 

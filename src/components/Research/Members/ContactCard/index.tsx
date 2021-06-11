@@ -30,7 +30,7 @@ export function ContactCard(props: ContactCardProps) {
   return (
     <Container>
       <img 
-        src={props.avatar ? props.avatar : '/user.png'}
+        src={props.avatar ? props.avatar : '/images/user.png'}
         alt={props.name}
       />
 

@@ -112,10 +112,13 @@ export const MenuLink = styled(Scroll)`
   @media (max-width: 860px) {
     justify-content: flex-start;
     padding: 1rem 2rem;
-    width: 40%;
 
     &:hover {
       color: var(--primary);
+    }
+
+    &:last-child {
+      margin-bottom: 1.5rem;
     }
   }
 `

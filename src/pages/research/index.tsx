@@ -3,7 +3,7 @@ import { Beginning } from '../../components/Research/Beginning'
 import { Development } from '../../components/Research/Development'
 import { Members } from '../../components/Research/Members'
 
-import { Container } from '../../styles/research'
+import Container from './styles'
 
 export default function Research() {
   return (
